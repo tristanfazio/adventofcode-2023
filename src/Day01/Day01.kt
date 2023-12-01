@@ -14,10 +14,10 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day${DAY}_test")
+    val testInput = readInput("Day${DAY}/Day${DAY}_test")
     check(part1(testInput) == 1)
 
-    val input = readInput("Day${DAY}")
+    val input = readInput("Day${DAY}/Day${DAY}")
 
     part1(input).println()
     part2(input).println()
