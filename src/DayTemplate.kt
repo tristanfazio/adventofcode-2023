@@ -1,3 +1,4 @@
+const val DAY = "01";
 fun main() {
     fun part1(input: List<String>): Int {
         return input.size
@@ -8,10 +9,11 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day01_test")
+    val testInput = readInput("Day${DAY}_test")
     check(part1(testInput) == 1)
 
-    val input = readInput("Day01")
+    val input = readInput("Day${DAY}01")
+
     part1(input).println()
     part2(input).println()
 }
