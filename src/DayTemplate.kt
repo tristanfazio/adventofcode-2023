@@ -1,7 +1,5 @@
-import println
-import readInput
 
-const val DAY = "01";
+private const val DAY = "01";
 fun main() {
     fun part1(input: List<String>): Int {
         return input.size
@@ -11,23 +9,32 @@ fun main() {
         return input.size
     }
 
-    val testInput = readInput("Day${Day01.DAY}/Day${Day01.DAY}_test")
+    val testInput = readInput("Day${DAY}/Day${DAY}_test")
 
     println("---------------Test Part1---------------")
     val testp1 = part1(testInput)
-    println("Test Part1 InputAnswer:")
-    testp1.println()
-    check(testp1 == 142)
+    check(testp1 == 8)
 
-    val input = readInput("Day${Day01.DAY}/Day${Day01.DAY}")
+    println("---------------Test Part2---------------")
+    val testp2 = part2(testInput)
+    check(testp2 == 2286)
+
+    val input = readInput("Day${DAY}/Day${DAY}")
 
     println("---------------Part1---------------")
     val p1 = part1(input)
-    println("Part1 InputAnswer:")
-    p1.println()
 
     println("---------------Part2---------------")
     val p2 = part2(input)
-    println("Part2 InputAnswer:")
+
+
+    println("=============================")
+    print("Test Part1 Answer: ")
+    testp1.println()
+    print("Test Part2 Answer: ")
+    testp2.println()
+    print("Part1 Answer: ")
+    p1.println()
+    print("Part2 Answer: ")
     p2.println()
 }
