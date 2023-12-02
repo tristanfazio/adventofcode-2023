@@ -1,7 +1,9 @@
+package Day02
+
 import println
 import readInput
 
-const val DAY = "01";
+const val DAY = "02";
 fun main() {
     fun part1(input: List<String>): Int {
         return input.size

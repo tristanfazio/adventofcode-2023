@@ -129,6 +129,7 @@ fun main() {
     check(testp1 == 142)
 
     val testInput2 = readInput("Day${DAY}/Day${DAY}_test2")
+
     println("---------------Test Part2---------------")
     val testp2 = part2(testInput2)
     println("Test Part2 InputAnswer:")
