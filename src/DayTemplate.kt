@@ -2,22 +2,22 @@
 private const val DAY = "01";
 fun main() {
     fun part1(input: List<String>): Int {
-        return input.size
+        return 0
     }
 
     fun part2(input: List<String>): Int {
-        return input.size
+        return 0
     }
 
     val testInput = readInput("Day${DAY}/Day${DAY}_test")
 
     println("---------------Test Part1---------------")
     val testp1 = part1(testInput)
-    check(testp1 == 8)
+    check(testp1 == 0)
 
     println("---------------Test Part2---------------")
     val testp2 = part2(testInput)
-    check(testp2 == 2286)
+    check(testp2 == 0)
 
     val input = readInput("Day${DAY}/Day${DAY}")
 
